@@ -1,17 +1,48 @@
-- name: Dennis Brotzky
+- name: Ankit Khatri
   bio: |
-    Written by You. This is where your author bio lives. Share your work, your
-    joys and of course, your Twitter handle.
-  avatar: ./avatars/dennis-brotzky.jpg
+    Co-founder & CEO of CodeMyMobile. Ex-ISRO scientist.
+    A proud father. A loving husband.
+  avatar: ./avatars/ankit-khatri.png
   featured: true
   social:
     - name: github
-      url: https://github.com
+      url: https://github.com/ankitkhatri
     - name: twitter
-      url: https://github.com
-    - name: instagram
-      url: https://github.com
-    - name: dribbble
-      url: https://github.com
+      url: https://twitter.com/ankitkhatri
     - name: linkedin
-      url: https://github.com
+      url: https://www.linkedin.com/in/ankitkhatri/
+
+- name: Ankit Popli
+  bio: |
+    Web Components Evangelist.
+    Brainwashed by Tech talks.
+    Engineer by Profession.
+  avatar: ./avatars/ankit-popli.jpg
+  featured: false
+  social:
+    - name: github
+      url: https://github.com/ankitpopli1891
+    - name: twitter
+      url: https://twitter.com/ankitpopli1891
+    - name: linkedin
+      url: https://www.linkedin.com/in/ankitpopli1891/
+
+- name: Ankur Bhugra
+  bio: |
+    .
+  avatar: ./avatars/ankur-bhugra.jpg
+  featured: false
+  social:
+    - name: twitter
+      url: https://twitter.com/ankurbhugra
+    - name: linkedin
+      url: https://www.linkedin.com/in/ankurbhugra/
+
+- name: Humza Aziz
+  bio: |
+    .
+  avatar: ./avatars/humza-aziz.jpg
+  featured: false
+  social:
+    - name: twitter
+      url: https://twitter.com/humzaaziz81
