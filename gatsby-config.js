@@ -3,9 +3,9 @@ module.exports = {
     title: `CodeMyMobile | Crafting Apps Intelligently`,
     name: `CodeMyMobile Inc`,
     siteUrl: `https://blog.codemymobile.com`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    description: `Hire the best remote development team. A team of experienced developers for Android, iOS, React Native, Augmented/Virtual Reality, Docker, Kubernetes, Blockchain and more.`,
     hero: {
-      heading: `CodeMyMobile - Creating Products that are loved by millions.`,
+      heading: `CodeMyMobile - Your Partners in Technology.`,
       maxWidth: 652
     },
     social: [
@@ -51,6 +51,57 @@ module.exports = {
         theme_color: `#fff`,
         display: `standalone`,
         icon: `src/assets/codemymobile.svg`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
+    {
+      resolve: `gatsby-plugin-feed-generator`,
+      options: {
+        generator: `GatsbyJS`,
+        json: true,
+        rss: false,
+        siteQuery: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            name: 'featured',
+            query: `
+              {
+                allArticle(limit: 1, sort: {fields: [date], order: DESC}) {
+                  nodes {
+                    title
+                    excerpt
+                    date
+                    author
+                    slug
+                  }
+                }
+              }
+            `,
+            normalize: ({ query: { site, allArticle } }) => {
+              return allArticle.nodes.map(node => {
+                return {
+                  url: `${site.siteMetadata.siteUrl}${node.slug}`,
+                  title: node.title,
+                  date: node.date,
+                  excerpt: node.excerpt,
+                  author: { name: node.author }
+                };
+              });
+            }
+          }
+        ]
       }
     }
   ]
