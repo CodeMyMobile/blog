@@ -107,9 +107,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
-        allPageHeaders: [
-          'Access-Control-Allow-Origin: https://codemymobile.com'
-        ],
+        headers: {
+          '/featured.json': [
+            'Access-Control-Allow-Origin: https://codemymobile.com',
+          ]
+        }
       }
     }
   ]
