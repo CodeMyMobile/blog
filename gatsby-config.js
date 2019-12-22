@@ -139,7 +139,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          '/featured.json': [
+          '/*.json': [
             'Access-Control-Allow-Origin: https://codemymobile.com',
           ]
         }
