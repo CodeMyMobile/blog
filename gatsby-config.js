@@ -100,6 +100,35 @@ module.exports = {
                 };
               });
             }
+          },
+          {
+            name: 'recent',
+            query: `
+              {
+                allArticle(limit: 3, sort: {fields: [date], order: DESC}) {
+                  nodes {
+                    title
+                    excerpt
+                    date
+                    author
+                    slug
+                    hero
+                  }
+                }
+              }
+            `,
+            normalize: ({ query: { site, allArticle } }) => {
+              return allArticle.nodes.map(node => {
+                return {
+                  url: `${site.siteMetadata.siteUrl}${node.slug}`,
+                  title: node.title,
+                  date: node.date,
+                  excerpt: node.excerpt,
+                  author: { name: node.author },
+                  hero: node.hero,
+                };
+              });
+            }
           }
         ]
       }
