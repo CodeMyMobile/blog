@@ -112,7 +112,9 @@ module.exports = {
                     date
                     author
                     slug
-                    hero
+                    hero {
+                      publicURL
+                    }
                   }
                 }
               }
@@ -125,7 +127,7 @@ module.exports = {
                   date: node.date,
                   excerpt: node.excerpt,
                   author: { name: node.author },
-                  hero: node.hero,
+                  hero: `${site.siteMetadata.siteUrl}${node.hero.publicURL}`,
                 };
               });
             }
