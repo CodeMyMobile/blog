@@ -47,3 +47,13 @@
   social:
     - name: twitter
       url: https://twitter.com/humzaaziz81
+
+
+- name: Devesh Beri
+  bio: |
+    .
+  avatar: ./avatars/devesh-beri.jpg
+  featured: false
+  social:
+    - name: twitter
+      url: https://twitter.com/kaotykberi
