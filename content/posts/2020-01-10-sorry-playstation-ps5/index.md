@@ -2,7 +2,7 @@
 title: Sorry PlayStation 5, we're disappointed
 author: Devesh Beri
 date: 2020-01-10
-hero: ./images/PS5-features.jpg
+hero: ./images/PS5.jpg
 excerpt: Geek? Gamer? Journalist? At some point of time, we all have thought of buying a PlayStation (or an Xbox, but let's be honest, whenever we think of a  gaming console, the first thing that comes to our minds is PlayStation) even though some of us we ended up not buying it because it always has been a load on the pocket (ouch).
 ---
 
