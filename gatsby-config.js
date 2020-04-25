@@ -57,6 +57,9 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`
     },
     {
+      resolve: `gatsby-plugin-netlify-cms`
+    },
+    {
       resolve: `gatsby-plugin-feed-generator`,
       options: {
         generator: `GatsbyJS`,

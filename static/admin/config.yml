@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+
+media_folder: content/media
+public_folder: /media
+
+site_url: https://blog.codemymobile.com
+display_url: https://blog.codemymobile.com
+logo_url: https://blog.codemymobile.com/icons/icon-512x512.png
+
+collections:
+  - name: "post"
+    label: "Blog Post"
+    publish_mode: editorial_workflow
+    folder: "content/posts"
+    path: "{{slug}}/index"
+    create: true
+    delete: false
+    media_folder: "images"
+    public_folder: "./images"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Hero", name: "hero", widget: "image" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
