@@ -4,8 +4,8 @@ backend:
 media_folder: content/media
 public_folder: /media
 
-site_url: https://blog.codemymobile.com
-display_url: https://blog.codemymobile.com
+# site_url: https://blog.codemymobile.com
+# display_url: https://blog.codemymobile.com
 logo_url: https://blog.codemymobile.com/icons/icon-512x512.png
 
 collections:
